@@ -17,7 +17,7 @@ class Planning extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            items: []
+            items: ["test2", "test2", "test3"]
         };
         this.addItem = this.addItem.bind(this);
     }
@@ -50,7 +50,7 @@ class Planning extends Component {
 
     }
 
-    //this part saves the item on the list to the database
+    //this part saves the item on the list to route. The route must then save to database.
     saveTask = (event) => {
         event.preventDefault();
         const { item } = this.state;
@@ -73,13 +73,28 @@ class Planning extends Component {
 
                         </form>
                     </div>
-                    <ToDoItems entries={this.state.items} />
+                </div>
+                <div className="container">
+                    <div className="category-container">
+                    <h3>To Do</h3>
+                    {this.state.items.map(item => (
+                        <ToDoItems
+                        //className="saved-container"
+                        key={item._id}
+                        item={item}
+                        />
+                    ))}
+                    </div>
                 </div>
             </Container>
-        );
-    }
-};
+        )
+    };
+    
+}
+//create axios call to grab info from state and send it to /routes/todo.js. take each item and bring all the info I want
 
+
+  
 
 
 
