@@ -3,16 +3,7 @@ import ToDoItems from "../layout/toDoItems"
 import Container from "../layout/Container"
 import axios from "axios";
 
-// import "/index.css";
 
-// class Planning extends React.Component {
-//     render() {
-//         return (
-//             <h1>Planning Page Test</h1>
-//         );
-//     }
-
-// }
 class Planning extends Component {
     constructor(props) {
         super(props);
@@ -22,6 +13,7 @@ class Planning extends Component {
         this.addItem = this.addItem.bind(this);
     }
 
+    //pushes user input into array
     addItem(e) {
 
         if (this._inputElement.value !== "") {
@@ -35,6 +27,7 @@ class Planning extends Component {
                 };
             });
         }
+        //once a value has been submitted we clear it out
         this._inputElement.value = "";
         console.log(this.state.items);
         e.preventDefault();
@@ -79,7 +72,6 @@ class Planning extends Component {
                     <h3>To Do</h3>
                     {this.state.items.map(item => (
                         <ToDoItems
-                        //className="saved-container"
                         key={item._id}
                         item={item}
                         />

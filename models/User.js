@@ -13,6 +13,11 @@ const UserSchema = mongoose.Schema({
     type: Date,
     default: Date.now
   }
+  // guestBook: [
+  //   {
+  //   type : Schema.types.ObjectId,
+  //   ref: "GuestBook"
+  // }]
 });
 
 module.exports = mongoose.model("users", UserSchema);

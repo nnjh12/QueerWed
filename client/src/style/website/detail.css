@@ -1,0 +1,10 @@
+.details {
+  font-family: 'Bilbo Swash Caps';
+  height: 300px;
+}
+
+button {
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-left: 5px;
+}
