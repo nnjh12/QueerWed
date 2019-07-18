@@ -17,19 +17,21 @@ class Card extends React.Component {
                                 : <MDBIcon far icon="heart" size="lg" className="pink-text" onClick={this.props.addFavorite} data-vendorid={this.props.vendorid} data-toggle="tooltip" data-placement="right"
                                 title="When you LIKE a vendor, they can see your information." />
                             )}
-                            <h5 className="card-title title-font"><strong>{this.props.name}</strong></h5>
+                            {this.props.name !=="" && <h5 className="card-title title-font"><strong>{this.props.name}</strong></h5>}
                             <br></br>
-                            <p className="card-text"><i className="fas fa-bars mr-2"></i>{this.props.category}</p>
-                            <p className="card-text">
+                            {this.props.category !=="" && <p className="card-text"><i className="fas fa-bars mr-2"></i>{this.props.category}</p>}
+                            {this.props.city !=="" && <p className="card-text">
                                 <i className="fas fa-map-marker-alt mr-2"></i>
                                 <span className="mr-1">{this.props.address}
                                 </span><span className="mr-1">{this.props.city}
                                 </span><span className="mr-1">{this.props.state}
                                 </span><span className="mr-1">{this.props.zipcode}</span>
-                            </p>
-                            <p className="card-text"><i className="fas fa-mobile-alt mr-2"></i>{this.props.phone}</p>
-                            <p className="card-text"><i className="far fa-comment-alt mr-2"></i>{this.props.description}</p>
+                            </p>}
+                            {this.props.phone !=="" && <p className="card-text"><i className="fas fa-mobile-alt mr-2"></i>{this.props.phone}</p>}
+                            {this.props.description !=="" &&<p className="card-text"><i className="far fa-comment-alt mr-2"></i>{this.props.description}</p>}
+                            {this.props.website !=="" ? 
                             <a href={this.props.website} className="ml-0 mb-4 pink-text" rel="noopener noreferrer" target="_blank">Go to Website <i class="ml-2 fas fa-angle-double-right"></i></a>
+                            : <p className="ml-0 mb-4 pink-text noWebsite" rel="noopener noreferrer" target="_blank">No Website</p>}
                             {/* <a href={this.props.website} className="btn btn-pink ml-0 mb-3" rel="noopener noreferrer" target="_blank">Go to Website >></a> */}
                         </div>
                     </div>

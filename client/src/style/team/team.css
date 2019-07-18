@@ -29,6 +29,10 @@
   position: absolute;
   bottom: 0px;
 }
+.team-card-body .noWebsite {
+  position: absolute;
+  bottom: 0px;
+}
 /* .cardImageContainer {
   height: 300px;
   overflow: hidden;
