@@ -8,11 +8,11 @@ const TeamSearch = (props) => (
                     <div className="md-form">
                         <select className="form-control mb-2" id="inlineFormInputMD" name="category" size="1" style={{ width: "180px", borderTop: "0px", borderLeft: "0px", borderRight: "0px" }} onChange={props.onChange}>
                             <option value="">All</option>
-                            <option value="Flowers">Flowers</option>
                             <option value="Catering">Catering</option>
                             <option value="DJing">DJing</option>
+                            <option value="Flowers">Flowers</option>
                             <option value="Music">Music</option>
-                            <option value="Decor">Decor</option>
+                            <option value="Photography">Photography</option>
                         </select>
                     </div>
                 </div>

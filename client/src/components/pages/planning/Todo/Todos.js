@@ -5,6 +5,9 @@ import axios from "axios";
 import TodoMenu from "./TodoMenu";
 import "../../../../styles/todo/todo.css";
 import Nav from "../../../layout/Nav"
+  import Container from "../../../layout/Container"
+  import PageImage from "../../../layout/PageImage"
+
 
 class Todos extends Component {
   state = {
@@ -128,38 +131,37 @@ class Todos extends Component {
     return (
       <Fragment>
         <Nav />
-        <div className="main-image-container">
-          <h2 className="centered"><strong>Manage My To Do List</strong></h2>
-          <img src="http://www.coloradogayweddings.com/uploads/1/2/5/2/12524663/sq-denver-same-sex-wedding-planner_3_orig.jpg" alt="Manage your events"></img>
-          {/* <img src="http://ericacamilleproductions.com/weddings/wp-content/uploads/2019/02/mymoon-brooklyn-weddingphotographer-lgbt001.jpg"></img> */}
-
-        </div>
-
-        <div className="whole-container-todo">
+        <Container>
+          <PageImage
+            title="Manage My To Do List"
+            src="http://www.coloradogayweddings.com/uploads/1/2/5/2/12524663/sq-denver-same-sex-wedding-planner_3_orig.jpg" />
+          <div className="container-event"></div>
+          <div className="whole-container-todo">
 
 
-          <div className="container-todo">
-            <div className="one">
-              <TodoMenu items={this.state.items} />
-              <div className="two">
-                <TodoForm
-                  addTodo={this.handleNewTodo}
-                  editTodo={this.handleEditChange}
-                  current={this.state.current}
-                />
-                {this.state.items.map(item => (
-                  <TodoItem
-                    key={item._id}
-                    item={item}
-                    toggleComplete={() => this.toggleComplete(item._id)}
-                    handleRemoveTodo={() => this.handleRemoveTodo(item._id)}
-                    handleEditTodo={() => this.handleEditTodo(item._id)}
+            <div className="container-todo">
+              <div className="one">
+                <TodoMenu items={this.state.items} />
+                <div className="two">
+                  <TodoForm
+                    addTodo={this.handleNewTodo}
+                    editTodo={this.handleEditChange}
+                    current={this.state.current}
                   />
-                ))}
+                  {this.state.items.map(item => (
+                    <TodoItem
+                      key={item._id}
+                      item={item}
+                      toggleComplete={() => this.toggleComplete(item._id)}
+                      handleRemoveTodo={() => this.handleRemoveTodo(item._id)}
+                      handleEditTodo={() => this.handleEditTodo(item._id)}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </Fragment>
     );
   }

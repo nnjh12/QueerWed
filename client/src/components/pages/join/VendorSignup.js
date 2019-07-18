@@ -97,11 +97,11 @@ class VendorSignup extends React.Component {
                 <label htmlFor="formGroupExampleInput" className="m-0 p-0 pink-text">What kind of business are you in?</label>
                 <select className="form-control mb-2 pl-0" id="form1" name="category" size="1" style={{ width: "100%", borderRadius: "0px", borderTop: "0px", borderLeft: "0px", borderRight: "0px" }} onChange={this.handleInputChange}>
                   <option defaultValue></option>
-                  <option value="Flowers">Flowers</option>
                   <option value="Catering">Catering</option>
                   <option value="DJing">DJing</option>
+                  <option value="Flowers">Flowers</option>
                   <option value="Music">Music</option>
-                  <option value="Decor">Decor</option>
+                  <option value="Photography">Photography</option>
                 </select>
               </div>
               <Input name="address" value={this.state.address} onChange={this.handleInputChange} label="What’s your physical address?" />
