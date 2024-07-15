@@ -1,28 +1,24 @@
 # QueerWed
+An LGBTQIA+ space to plan weddings and promote solidarity and commerce within our community.</br>
+Utilized HTML, JavaScript, Bootstrap, React, Node.js, MongoDB.
 
-## An LGBTQIA+ space to plan weddings and promote solidarity and commerce within our community.
+## App Architecture[^1]
+![Architecture](https://images.contentstack.io/v3/assets/blt7151619cb9560896/blt4b651817f6dec60f/666848e371203e8537986b38/mern-stack.png)
+[^1]: Image from [MongoDB rescources](https://www.mongodb.com/resources/languages/mern-stack)
 
-## About the Website:
+## App Features
+* Plan: Stay organized with your To-Do List, Guest List, Favorite Vendor List, and Registry.
+* Community Power: Connect with LGBTQIA+ photographers, DJs, florists, caterers, and more.
+* Share & Celebrate: Create a website for your wedding details to share information, updates, and photos with guests.
+* Two Signup Features: You can sign up as a vendor or a wedding couple.
 
-<img src="assets/list-alt-regular.svg" width=20 align="top"> <strong> Plan: </strong>Stay organized with your To Do List, Guest List, Favorite Vendor List and Registry
+## My Contributions
+Led front-end and back-end development for:
+* Main page of the web application
+* Vendor registration system (`Are you a vendor?`)
+* Vendor search (`Find Professionals`)
 
-<img src="assets/handshake-solid.svg" width=20 align="top"> <strong> Community Power: </strong>Connect with LGBTQIA+ Photographers, DJs, Florists, Caterers, and more
-
-<img src="assets/heart-solid.svg" width=20 align="top"> <strong> Share & Celebrate: </strong> Create a website for your wedding details to share information, updates, and photos with guests
-<br>
-<br>
-
-### Couples Sign Up
-
-- Click the "Sign Up" button. Answer a few questions about your big day. Use your email address and password to log into your account.
-
-### Vendor Sign Up
-
-- Click the "Are You A Vendor" button. If you meet the requirements, complete the business form.
-  <br>
-  <br>
-
-You can visit the site at:  
-[https://queerwed.herokuapp.com](https://queerwed.herokuapp.com/)
+## Preview
+You can visit the site [here](https://queerwed.herokuapp.com/)
 
 [![Visit the site](assets/screenshot.png)](https://queerwed.herokuapp.com/)
