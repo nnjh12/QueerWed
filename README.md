@@ -19,6 +19,7 @@ Led front-end and back-end development for:
 * Vendor search (`Find Professionals`)
 
 ## Preview
-You can visit the site [here](https://queerwed.herokuapp.com/)
+![Preview](assets/screenshot.png)
+<!---  You can visit the site [here](https://queerwed.herokuapp.com/)
 
-[![Visit the site](assets/screenshot.png)](https://queerwed.herokuapp.com/)
+[![Visit the site](assets/screenshot.png)](https://queerwed.herokuapp.com/) --->
